@@ -7134,6 +7134,74 @@ button.close {
     display: none !important;
   }
 }
-h1 {
-  font-size: 100;
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Parisienne', cursive;
+}
+
+#home {
+  background-color: #3E454C;
+  color: #FFF6E5;
+}
+#home h1 {
+  font-size: 5rem;
+}
+#home .school-pic {
+  margin: 3rem auto 2rem auto;
+  display: block;
+  max-width: 100%;
+}
+#home p {
+  font-size: 1.55rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#details {
+  text-align: center;
+  background-color: #fff6e5;
+}
+@media (min-width: 769px) {
+  #details {
+    background: url(../img/cranwell.jpg);
+    background-size: cover;
+  }
+}
+#details .text-box {
+  background-color: #fff6e5;
+  color: #3E454C;
+  border-radius: 3px;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  #details .text-box {
+    padding: 2rem;
+    background-color: rgba(255, 246, 229, 0.9);
+  }
+}
+#details .text-box ul {
+  padding: 0;
+}
+#details .text-box li {
+  list-style: none;
+}
+
+.extra-margin-bottom {
+  margin-bottom: 3rem;
+}
+
+.extra-margin-top {
+  margin-top: 3rem;
 }
