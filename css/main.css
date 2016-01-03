@@ -7154,6 +7154,7 @@ h1, h2, h3 {
   margin: 3rem auto 2rem auto;
   display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 #home p {
   font-size: 1.55rem;
@@ -7201,10 +7202,12 @@ h1, h2, h3 {
 
 #groomsmen {
   background-color: #C0E8FF;
+  padding-bottom: 3rem;
 }
 
 #bridesmaids {
-  background-color: #FFB7C4;
+  background-image: linear-gradient(#ffb7c4, #f2dede);
+  padding-bottom: 3rem;
 }
 
 .wedding-party ul {
@@ -7213,6 +7216,7 @@ h1, h2, h3 {
 }
 .wedding-party li {
   list-style: none;
+  margin: 0.5rem 0;
 }
 .wedding-party .thumbnail {
   border-radius: 50%;
