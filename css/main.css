@@ -7143,6 +7143,14 @@ h1, h2, h3 {
   font-family: 'Parisienne', cursive;
 }
 
+h3 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
 #home {
   background-color: #3E454C;
   color: #FFF6E5;
