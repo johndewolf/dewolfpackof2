@@ -7238,7 +7238,7 @@ h2 {
     display: inline-block;
   }
 }
-.wedding-party img.thumbnail.active {
+.wedding-party .weddingPartyMember.active img {
   background-color: #fff6e5;
 }
 .wedding-party .featureImage img {
@@ -7253,9 +7253,12 @@ h2 {
     padding-bottom: 1rem;
   }
 }
-.wedding-party span.weddingPartyMember.active {
+.wedding-party .wp-name.weddingPartyMember.active {
   border-bottom: 2px solid #fff6e5;
   transition: border-color 0.5s ease;
+}
+.wedding-party a:hover {
+  text-decoration: none;
 }
 
 img {

@@ -100,9 +100,9 @@ h2 {
 		}
 	}
 
-	img.thumbnail.active {
+	.weddingPartyMember.active img {
 			background-color: #fff6e5;
-		}
+	}
 
 	.featureImage img {
 		border-radius: 3px;
@@ -119,9 +119,13 @@ h2 {
 		}
 	}
 
-	span.weddingPartyMember.active {
+	.wp-name.weddingPartyMember.active {
 		border-bottom: 2px solid #fff6e5;
 		transition: border-color 0.5s ease;
+	}
+
+	a:hover {
+		text-decoration: none;
 	}
 }
 // .weddingPartyMember.active:after {
