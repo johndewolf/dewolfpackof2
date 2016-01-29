@@ -272,7 +272,6 @@ td, th {
   src: url(../fonts/glyphicons-halflings-regular.eot);
   src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
 }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1347,7 +1346,7 @@ td, th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -5474,7 +5473,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     background-position: 0 0;
   }
 }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -5484,7 +5482,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     background-position: 0 0;
   }
 }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -5494,7 +5491,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     background-position: 0 0;
   }
 }
-
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -6815,7 +6811,7 @@ button.close {
   text-indent: -999px;
   cursor: pointer;
   background-color: black \9;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 10px;
 }
@@ -6924,7 +6920,6 @@ button.close {
 @-ms-viewport {
   width: device-width;
 }
-
 .visible-lg, .visible-md, .visible-sm, .visible-xs {
   display: none !important;
 }
@@ -7244,6 +7239,18 @@ h2 {
 .wedding-party .featureImage img {
   border-radius: 3px;
   border: 3px solid #3E454C;
+  -moz-animation-name: fadeIn;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
 }
 .wedding-party .weddingPartyMember {
   cursor: pointer;
@@ -7261,6 +7268,33 @@ h2 {
   text-decoration: none;
 }
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 img {
   max-width: 100%;
 }

@@ -107,6 +107,20 @@ h2 {
 	.featureImage img {
 		border-radius: 3px;
 		border: 3px solid #3E454C;
+    -moz-animation-name: fadeIn;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
 	}
 
 	.weddingPartyMember {
@@ -128,27 +142,30 @@ h2 {
 		text-decoration: none;
 	}
 }
-// .weddingPartyMember.active:after {
-//     display: block;
-//     position: relative;
-//     left: 128px;
-//     bottom: 50px;
-//     height: 3px;
-//     width: 50%;
-// 	  background-color: #98004a;
-// 	  content: "";
-//     -webkit-animation:
-//     borderAnimate 0.5s ease-in-out;
-// }
-
-// @-webkit-keyframes borderAnimate {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 50%;
-//   }
-// }
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 img {
 	max-width: 100%;
