@@ -33,17 +33,21 @@ h2 {
 	}
 
 }
+  section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+  }
 
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+  }
 @media (min-width: 768px) {
-	section {
-		height: 100vh;
-	}
 
-	.container {
-		position: relative;
-  	top: 50%;
-		transform: translateY(-50%);
-	}
 }
 
 #details {
