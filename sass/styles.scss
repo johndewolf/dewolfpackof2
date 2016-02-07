@@ -33,21 +33,18 @@ h2 {
 	}
 
 }
-  section {
-    width: 100%;
-    padding: 0 7%;
-    display: table;
-    margin: 0;
-    max-width: none;
-    height: 100vh;
-  }
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
 
-  .content {
-    display: table-cell;
-    vertical-align: middle;
-  }
-@media (min-width: 768px) {
-
+.content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #details {
@@ -108,6 +105,10 @@ h2 {
 			background-color: #fff6e5;
 	}
 
+  .featureImage {
+    min-height: 450px;
+    margin-top: 2rem;
+  }
 	.featureImage img {
 		border-radius: 3px;
 		border: 3px solid #3E454C;
